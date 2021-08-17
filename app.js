@@ -39,7 +39,7 @@ function calculateCreditScore() {
     item.innerHTML = (
       Number(item.parentElement.children[1].textContent) *
       Number(item.parentElement.children[2].children[0].value)
-    ).toFixed(2);
+    ).toFixed(1);
   }
 }
 
@@ -52,7 +52,7 @@ function calculateYearAverage() {
   for (let item of $creditScoreElement) {
     totalCreditScore += Number(item.textContent);
   }
-  return (totalCreditScore / totalCredits).toFixed(2);
+  return (totalCreditScore / totalCredits).toFixed(1);
 }
 
 for (let item of $scoreElement) {
@@ -69,7 +69,7 @@ for (let item of $scoreElement) {
   item.addEventListener("blur", () => {
     item.value = Number(item.value);
     if (item.value < 0 || item.value > 10 || isNaN(item.value)) item.value = 0;
-    item.value = Number(item.value).toFixed(2);
+    item.value = Number(item.value).toFixed(1);
     calculateCreditScore();
     $yearAverage.innerText = calculateYearAverage();
   });
