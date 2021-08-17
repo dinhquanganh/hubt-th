@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tổng kết năm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="Card">
+        <div class="Card__content Card__content--border table-responsive">
+          <h5>Chuyên ngành CNTT K24 - Năm 2</h5>
+          <!-- <button class="Button">
+            <svg
+              aria-hidden="true"
+              height="12"
+              width="12"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.994.004c.555 0 1.006.448 1.006 1a.997.997 0 0 1-.212.614l-5.782 7.39L9 13.726a1 1 0 0 1-.293.708L7.171 15.97A.1.1 0 0 1 7 15.9V9.008l-5.788-7.39A.996.996 0 0 1 1.389.214a1.01 1.01 0 0 1 .617-.21z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Filter</span>
+          </button> -->
+          <!-- <button class="Button ml-auto">
+            <svg
+              aria-hidden="true"
+              height="12"
+              width="12"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 7h6a1 1 0 0 1 0 2H9v6a1 1 0 0 1-2 0V9H1a1 1 0 1 1 0-2h6V1a1 1 0 1 1 2 0z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>New</span>
+          </button>
+          <button class="Button ml-2">
+            <svg
+              aria-hidden="true"
+              height="12"
+              width="12"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 10.006a1 1 0 1 1-2 0v-5.6L2.393 15.009a.992.992 0 1 1-1.403-1.404L11.595 3.002h-5.6a1 1 0 0 1 0-2.001h8.02a1 1 0 0 1 .284.045.99.99 0 0 1 .701.951z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Export</span>
+          </button> -->
+        </div>
+        <table class="Card__table Table">
+          <thead>
+            <tr>
+              <!-- <td class="Table__checkbox">
+                <label for="TableCheckAll" class="CheckBox">
+                  <input type="checkbox" id="TableCheckAll" />
+                  <span class="CheckBox__control">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="14"
+                      width="14"
+                      viewBox="0 0 14 14"
+                    >
+                      <path
+                        d="M10.346 3.301a.929.929 0 0 1 1.37 0 1.076 1.076 0 0 1 0 1.456l-4.64 4.94a.929.929 0 0 1-1.37 0L3.284 7.123a1.076 1.076 0 0 1 0-1.456.929.929 0 0 1 1.37 0L6.39 7.513l3.955-4.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                </label>
+              </td> -->
+              <td>
+                <div class="Table__header-item">
+                  <span>Tên học phần</span>
+                </div>
+              </td>
+              <td>Số tín chỉ</td>
+              <td>Thang điểm 10</td>
+              <td>Điểm theo tín</td>
+            </tr>
+          </thead>
+          <tbody class="body-data"></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Trung bình năm</td>
+              <td id="year-average">0</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="Card__content">
+          <!-- <div class="Card__content-text"><strong>1</strong> result</div> -->
+          <button class="Button ml-auto" disabled>
+            <span>Previous</span>
+          </button>
+          <button class="Button ml-2" disabled>
+            <span>Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      created by &nbsp
+      <a href="https://www.facebook.com/pastetuaam/">dinhquanganh</a>&nbsp from
+      th2440
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+body {
+  background: #e3e8ee;
+  color: #3c4257;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+strong,
+b {
+  font-weight: 500;
+}
+
+.Button {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  outline: none !important;
+  font-weight: 500;
+  background-color: #fff;
+  border: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.24s, box-shadow 0.24s, color 0.24s;
+  color: #3c4257;
+}
+.Button[disabled] {
+  opacity: 0.5;
+}
+.Button:not([disabled]):hover {
+  color: #1a1f36;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 3px 9px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+.Button:not([disabled]):hover svg {
+  fill: #2a2f45;
+}
+.Button:not([disabled]):focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(58, 151, 212, 0.36) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+.Button span {
+  line-height: 20px;
+}
+.Button svg {
+  margin-right: 8px;
+  fill: #4f566b;
+}
+
+.Card {
+  border-radius: 4px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.08),
+    0 3px 6px 0 rgba(0, 0, 0, 0.12);
+}
+.Card__content {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.Card__content--border {
+  box-shadow: inset 0 -1px #e3e8ee;
+}
+
+.Table {
+  width: 100%;
+}
+.Table tbody td {
+  font-size: 14px;
+  color: #3c4257;
+  font-weight: 400;
+  line-height: 20px;
+}
+.Table thead {
+  background-color: #f7fafc;
+}
+.Table thead td {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #1a1f36;
+  font-weight: 500;
+  vertical-align: middle;
+  line-height: 20px;
+  user-select: none;
+}
+.Table tr td {
+  box-shadow: inset 0 -1px #e3e8ee;
+  padding: 8px;
+}
+.Table tr td:first-child {
+  padding-left: 20px;
+}
+.Table__header-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Table__header-item svg {
+  margin-left: 8px;
+  fill: #8792a2;
+}
+.Table__checkbox label {
+  opacity: 0;
+}
+tr:hover > .Table__checkbox label {
+  opacity: 1;
+}
+.Table tfoot {
+  background-color: #00c070;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  vertical-align: middle;
+  line-height: 20px;
+  user-select: none;
+}
+.Table tfoot #year-average {
+  color: #ffffff;
+}
+.CheckBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.CheckBox__control {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  display: flex;
+  background-color: white;
+  height: 14px;
+  min-width: 14px;
+  width: 14px;
+  position: relative;
+  transition: background-color 0.24s, box-shadow 0.24s;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.CheckBox__control[disabled] {
+  opacity: 0.5;
+}
+.CheckBox__control:not([disabled]):hover {
+  color: #1a1f36;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.08) 0px 3px 9px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+.CheckBox__control:not([disabled]):hover svg {
+  fill: #2a2f45;
+}
+.CheckBox__control:not([disabled]):focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(58, 151, 212, 0.36) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+.CheckBox__control svg {
+  transition: opacity 0.24s;
+  opacity: 0;
+  fill: white !important;
+}
+.CheckBox input {
+  position: absolute;
+  z-index: -1;
+}
+.CheckBox input:not([disabled]):checked {
+  opacity: 1 !important;
+}
+input:not([disabled]):checked + .CheckBox__control {
+  background-color: #5469d4;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, #5469d4 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+input:not([disabled]):checked + .CheckBox__control svg {
+  opacity: 1;
+  fill: white;
+}
+input:not([disabled]):not(:checked):focus + .CheckBox__control,
+input:not([disabled]):not(:checked):active + .CheckBox__control {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(58, 151, 212, 0.36) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+input:not([disabled]):checked:focus + .CheckBox__control,
+input:not([disabled]):checked:active + .CheckBox__control {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(58, 151, 212, 0.36) 0px 0px 0px 4px,
+    rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, #5469d4 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+footer {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  padding: 5px 0;
+}
+@media only screen and (max-width: 516px) {
+  .body-data tr td:first-child {
+    min-width: 0 !important;
+    max-width: 200px !important;
+  }
+}
